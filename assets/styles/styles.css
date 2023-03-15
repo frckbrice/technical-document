@@ -1,0 +1,70 @@
+/*@import "https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap";*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #4d4e53;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+p {
+  font-size: 30px;
+  margin-left: 35px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.wrap {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.quick-link {
+  width: 301px;
+  height: 100%;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  border-right: 4px solid #ddd;
+  padding: 0;
+}
+
+.doc-contain {
+  order: 2;
+  margin-left: 20%;
+  position: absolute;
+  left: 6%;
+  top: 15px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0;
+  border-top: 1px solid black;
+  padding: 10px 30px;
+  text-align: left;
+  width: 300px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.line-deco {
+  text-decoration: none;
+}
+
+.line-deco {
+  color: #4d4e53;
+}
