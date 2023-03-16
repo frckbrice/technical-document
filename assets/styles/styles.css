@@ -12,6 +12,11 @@
   background-size: cover;
 }
 
+body {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
 .wrap {
   display: block;
   padding: 0;
