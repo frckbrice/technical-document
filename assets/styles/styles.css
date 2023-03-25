@@ -75,7 +75,7 @@ h2 {
 
 .doc-contain {
   width: 94.1%;
-  padding: 20px 20px 15px 20px;
+  padding: 20px 20px 15px;
   grid-area: contain;
 }
 
@@ -120,7 +120,7 @@ code {
 
   .doc-contain {
     margin: auto;
-    padding: 0 20px ;
+    padding: 0 20px;
     word-wrap: normal;
     word-break: normal;
   }
