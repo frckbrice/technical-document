@@ -25,12 +25,20 @@ body {
 }
 
 .navbar {
-  border-right: 1px solid #ccc;
   position: fixed; /* very important for the issue */
   grid-area: aside;
   width: 23.5%; /* very important for the issue */
   height: 100vh;
-  border-right: 4px solid #ddd;
+  border-right: 3px solid #b4b3b3;
+}
+
+h2 {
+  font-size: 28.8px;
+  margin-left: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+  font-family: "Open Sans", Arial, sans-serif !important;
 }
 
 .quick-link h2 {
@@ -71,15 +79,6 @@ body {
   color: #4d4e53;
 }
 
-h2 {
-  font-size: 28.8px;
-  margin-left: 35px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  color: black;
-  font-family: "Open Sans", Arial, sans-serif !important;
-}
-
 .doc-contain p {
   padding: 0 20px 10px 55px;
   font-size: 15px;
@@ -101,13 +100,9 @@ code {
   padding: 10px 0;
   margin-left: 75px;
   margin-bottom: auto;
+  margin-top: 0;
   display: block;
   font-family: monospace !important;
-}
-
-code {
-  white-space: pre-line;
-  word-break: normal;
-  word-wrap: normal;
   border-radius: 5px;
 }
+
