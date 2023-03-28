@@ -14,38 +14,63 @@
   </head>
   <body>
     <main class="wrap">
-      <!--principle: create a grid of 2 columns.
-      put sidebar "navbar" in left column and contain "doccontain" in right column. the navbar also contain title JS... and scrolled part "vertnavbar" which have inside the a tags-->
-      <nav class="navbar"> 
-           <div class="quick-link">
-            <h2>JS Documentation</h2>
-            <div class="vertnavbar">
-                <a href="#intro" class="line-deco" alt=""> Introduction</a>
+      <!--section contenu du document-->
+      <nav class="quick-link">
+        <h2>JS Documentation</h2>
+        <ul>   
+          <li class="text-deco">
+            <a href="#intro" class="line-deco" alt=""> Introduction</a>
+          </li>
+          <li class="text-deco">
             <a href="#wysak" class="line-deco" alt="">
               What you should already know</a
             >
+          </li>
+          <li class="text-deco">
             <a href="#jsj" class="line-deco" alt=""> JavaScript and Java</a>
+          </li>
+          <li class="text-deco">
             <a href="#hw" class="line-deco" alt="">Hello world</a>
+          </li>
+          <li class="text-deco">
             <a href="#var" class="line-deco" alt="">Variables</a>
+          </li>
+          <li class="text-deco">
             <a href="#dvar" class="line-deco" alt="">Declaring variables</a>
+          </li>
+          <li class="text-deco">
             <a href="#varsc" class="line-deco" alt="">Variable scope</a>
-         <a href="#gv" class="line-deco" alt="">Global variables</a>
-          <a href="#constant" class="line-deco" alt="">Constants</a>
-         <a href="#datatypes" class="line-deco" alt="">Data types</a>
-         <a href="#if-else" class="line-deco" alt="">if...else statement</a>
-         <a href="#while" class="line-deco" alt="">while statement</a>
-         <a href="#funcdec" class="line-deco" alt=""
+          </li>
+          <li class="text-deco">
+            <a href="#gv" class="line-deco" alt="">Global variables</a>
+          </li>
+          <li class="text-deco">
+            <a href="#constant" class="line-deco" alt="">Constants</a>
+          </li>
+          <li class="text-deco">
+            <a href="#datatypes" class="line-deco" alt="">Data types</a>
+          </li>
+          <li class="text-deco">
+            <a href="#if-else" class="line-deco" alt="">if...else statement</a>
+          </li>
+          <li class="text-deco">
+            <a href="#while" class="line-deco" alt="">while statement</a>
+          </li>
+          <li class="text-deco">
+            <a href="#funcdec" class="line-deco" alt=""
               >Function declarations</a
             >
-         <a href="#ref" class="line-deco" alt="">Reference</a>
-         
-            </div>
-           </div> 
+          </li>
+          <li class="text-deco">
+            <a href="#ref" class="line-deco" alt="">Reference</a>
+          </li>
+        </ul>
       </nav>
+
       <!--section contenu du document-->
       <div class="doc-contain">
         <section id="intro">
-          <h2>Introduction</h2>
+          <h1>Introduction</h1>
           <p>
             JavaScript is a cross-platform, object-oriented scripting language.
             It is a small and lightweight language. Inside a host environment
@@ -80,7 +105,7 @@
           </ul>
         </section>
         <section id="wysak">
-          <h2>What you should already know</h2>
+          <h1>What you should already know</h1>
           <p>This guide assumes you have the following basic background:</p>
           <ul>
             <li class="tab">
@@ -97,7 +122,7 @@
           </ul>
         </section>
         <section id="jsj">
-          <h2>JavaScript and Java</h2>
+          <h1>JavaScript and Java</h1>
           <p>
             JavaScript and Java are similar in some ways but fundamentally
             different in some others. The JavaScript language resembles Java but
@@ -127,13 +152,13 @@
         </section>
         <section id="hw">
           <article>
-            <h2>Hello world</h2>
+            <h1>Hello world</h1>
             <p>
               To get started with writing JavaScript, open the Scratchpad and
               write your first "Hello world" JavaScript code:
             </p>
             <code>
-              function greetMe(yourName) { alert("Hello " + yourName); } 
+              function greetMe(yourName) { alert("Hello " + yourName); } <br />
               greetMe("World");
             </code>
             <p>
@@ -143,7 +168,7 @@
           </article>
         </section>
         <section id="var">
-          <h2>variables</h2>
+          <h1>variables</h1>
           <p>
             You use variables as symbolic names for values in your application.
             The names of variables, called identifiers, conform to certain
@@ -164,7 +189,7 @@
           </p>
         </section>
         <section id="dvar">
-          <h2>Declaring Variables</h2>
+          <h1>Declaring Variables</h1>
           <p>You can declare a variable in three ways:</p>
           <p>With the keyword var. For example,</p>
           <code> var x = 42. </code>
@@ -185,7 +210,7 @@
           </p>
         </section>
         <section id="varsc">
-          <h2>Variable scope</h2>
+          <h1>Variable scope</h1>
           <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
           <p>
             JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
@@ -202,14 +227,14 @@ not defined
           </code>
         </section>
         <section id="gv">
-          <h2>Global variables</h2>
+          <h1>Global variables</h1>
           <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
           <p>
             Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
           </p>
         </section>
         <section id="constant">
-          <h2>Constants</h2>
+          <h1>Constants</h1>
           <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
           <code>
             const PI = 3.14;
@@ -223,7 +248,7 @@ not defined
                  <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:
 </p>
 <code>
-    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS  
+    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS  <br>
 WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;<br>
 //statements }
 </code>
@@ -234,18 +259,18 @@ WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;<br>
 </code> 
         </section>
         <section id="datatypes">
-          <h2>Data types</h2>
+          <h1>Data types</h1>
            <p>The latest ECMAScript standard defines seven data types:</p>
           <ul>
            <li class="tab">
                 Six data types that are primitives:
                 <ul>
-                    <li class="tab2">Boolean. true and false.       </li>
-                    <li class="tab2">null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
-                   <li class="tab2">undefined. A top-level property whose value is undefined.</li>
-                   <li class="tab2">Number. 42 or 3.14159.</li>
-                    <li class="tab2">String. "Howdy"</li>
-                    <li class="tab2">Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                    <li class="tab">Boolean. true and false.       </li>
+                    <li class="tab">null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+                   <li class="tab">undefined. A top-level property whose value is undefined.</li>
+                   <li class="tab">Number. 42 or 3.14159.</li>
+                    <li class="tab">String. "Howdy"</li>
+                    <li class="tab">Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
                 </ul>
             </li>
 <li class="tab">and Object</li>
@@ -255,7 +280,7 @@ WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;<br>
           </p>
         </section>
         <section id="if-else">
-          <h2>if...else statement</h2>
+          <h1>if...else statement</h1>
 <p> <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
           <code>
            if (condition) { statement_1; } else { statement_2; }
@@ -290,7 +315,7 @@ statement_4_runs_if_condition_is_false; } <br>
    
         </section>
         <section id="while">
-          <h2>while statement</h2>
+          <h1>while statement</h1>
          <p>
 A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
 <code>
@@ -331,7 +356,7 @@ The following while loop iterates as long as n is less than three:</p>
 
         </section>
         <section id="funcdec">
-          <h2>Function declarations</h2>
+          <h1>Function declarations</h1>
           <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
 </p>
 <ul>
@@ -363,7 +388,7 @@ Primitive parameters (such as a number) are passed to functions by value; the va
           </p>
         </section>
         <section id="ref">
-          <h2>Reference</h2>
+          <h1>Reference</h1>
           <ul>
             <li class="tab">
               All the documentation in this page is taken from

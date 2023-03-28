@@ -1,70 +1,127 @@
-/*@import "https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap";*/
+/* @import "https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap"; */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-color: #fff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #4d4e53;
-  font-size: 16px;
-  font-weight: lighter;
   line-height: 1.5rem;
 }
 
-h1 {
-  font-size: 30px;
-  margin: 10px;
-}
-
-p {
-  font-size: 30px;
-  margin-left: 35px;
-  margin-top: 40px;
-  margin-bottom: 30px;
+body {
+  font-size: 15px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #4d4e53;
+  width: 98%;
+  height: 100%;
 }
 
 .wrap {
+  display: grid;
+  grid-template-columns: 22% 1fr;
+  width: auto;
+  height: auto;
+  grid-template-areas: "aside contain";
   padding: 0;
   margin: 0;
-  position: relative;
 }
 
-.quick-link {
-  width: 301px;
-  height: 100%;
-  position: relative;
-  top: 20px;
-  left: 0px;
-  border-right: 4px solid #ddd;
-  padding: 0;
+.navbar {
+  position: fixed; /* very important for the issue */
+  grid-area: aside;
+  width: 21.4%; /* very important for the issue */
+  height: inherit;
+  border-right: 3px solid #b4b3b3;
+}
+
+h2 {
+  font-size: 28.8px;
+  margin-left: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+  font-family: "Open Sans", Arial, sans-serif !important;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 90%;
+}
+
+.quick-link h2 {
+  font-size: 28px !important;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif !important;
+  margin: 20px 0 15px;
+}
+
+.vertnavbar {
+  width: 100%; /* very important for the issue */
+  height: 90vh; /* very important for the issue */
+  position: inherit; /* very important for the issue */
+  font-family: "Open Sans", Arial, sans-serif !important;
+  overflow-y: auto;
+  border-width: 3px solid #ddd;
+  text-align: center;
+}
+
+.vertnavbar a {
+  background-color: #fff;
+  color: #4d4e53;
+  display: block; /* very important for the issue */
+  padding: 12px;
+  text-decoration: none; /* very important for the issue */
+  border-top: 1px solid black;
+  text-align: left;
 }
 
 .doc-contain {
-  order: 2;
-  margin-left: 20%;
-  position: absolute;
-  left: 6%;
-  top: 15px;
-}
-
-nav ul li {
-  list-style: none;
-  margin: 0;
-  border-top: 1px solid black;
-  padding: 10px 30px;
-  text-align: left;
-  width: 300px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
+  width: 94.1%;
+  padding: 20px 20px 15px;
+  grid-area: contain;
 }
 
 .line-deco {
   text-decoration: none;
-}
-
-.line-deco {
   color: #4d4e53;
+}
+
+.doc-contain p {
+  padding: 0 20px 10px 55px;
+  font-size: 15px;
+  width: 98%;
+}
+
+li.tab {
+  margin: 15px 15px 10px 120px;
+}
+
+li.tab2 {
+  margin: 15px 15px 10px 70px;
+}
+
+code {
+  font-size: 12px;
+  background-color: #f7f7f7;
+  line-height: 2;
+  padding: 10px 0;
+  margin-left: 75px;
+  margin-bottom: auto;
+  margin-top: 0;
+  display: block;
+  font-family: monospace !important;
+  border-radius: 5px;
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .quick-link h2 {
+    font-size: x-small;
+    word-wrap: initial;
+  }
+
+  .doc-contain {
+    margin: auto;
+    padding: 0 20px;
+    word-wrap: normal;
+    word-break: normal;
+  }
 }
